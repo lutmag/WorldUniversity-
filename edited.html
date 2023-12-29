@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>University Website</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <script src='main.js'></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,200;1,300;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css" integrity="sha384-BY+fdrpOd3gfeRvTSMT+VUZmA728cfF9Z2G42xpaRkUGu2i3DyzpTURDo5A6CaLK" crossorigin="anonymous">
+</head>
+<body>
+    <section class="header">    
+        <nav>
+            <a href="index.html"><img src="images/logo.png" alt="University Logo"></a>
+            <div class="nav-links" id="navLinks">
+              <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">COURSES</a></li>
+                    <li><a href="#">BLOG</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </div>
+             <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="tex-box">
+            <h1> World's Biggest University</h1>
+            <p> Creating a website is one of the easiest things in the world. You need to learn HTML,CSS <br> Javascript and you are set</p>
+            <a href="" class="hero-btn">Vist Us To Know More</a>
+    
+           </div>  
+    </section>
+
+    <section class="course">
+        <h1>Courses We Offer</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+        <div class="row">
+            <div class="course-col">
+                <h3>Intermediate</h3>
+                <p>Explore intermediate courses with a focus on...</p>
+            </div>
+
+            <div class="course-col">
+                <h3>Degree</h3>
+                <p>Pursue your degree with a comprehensive...</p>
+            </div>
+
+            <div class="course-col">
+                <h3>PostGrad</h3>
+                <p>Advance your knowledge and skills in...</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="campus">
+        <h1>Our Global Campus</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+        <div class="row">
+            <div class="campus-col">
+                <img src="images/london.png" alt="London Campus">
+                <div class="layer">
+                    <h3>LONDON</h3>
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="images/washington.png" alt="Washington Campus">
+                <div class="layer">
+                    <h3>WASHINGTON</h3>
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="images/newyork.png" alt="New York Campus">
+                <div class="layer">
+                    <h3>NEW YORK</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="facilities">
+        <h1>Our Facilities</h1>
+        <p>Explore our state-of-the-art facilities that cater to...</p>
+
+        <div class="row">
+            <div class="facilities-col">
+                <img src="images/library.png" alt="Library">
+                <h3>World Class Library</h3>
+                <p>Access a vast collection of resources...</p>
+            </div>
+            <div class="facilities-col">
+                <img src="images/basketball.png" alt="Playground">
+                <h3>Largest Playground</h3>
+                <p>Engage in recreational activities...</p>
+            </div>
+            <div class="facilities-col">
+                <img src="images/cafeteria.png" alt="Cafeteria">
+                <h3>Tasty and Healthy Food</h3>
+                <p>Enjoy a variety of delicious and nutritious meals...</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <h1>What Our Students Have To Say</h1>
+        <p>Read testimonials from our satisfied students.</p>
+
+        <div class="testimonials-col">
+            <img src="images/user1.jpg" alt="Student 1">
+            <div>
+                <p>Exceptional learning experience! The courses are...</p>
+                <h3>Christen Huggins</h3>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star-o" ></i>
+            </div>
+        </div>
+        <div class="testimonials-col">
+            <img src="images/user2.jpg" alt="Student 2">
+            <div>
+                <p>I found the courses challenging and rewarding. The...</p>
+                <h3>Sol Money</h3>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star-half-o" ></i>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <h1>Enroll for our various online courses from anywhere in the world</h1>
+        <a href="#" class="hero-btn">CONTACT US</a>
+    </section>
+
+    <section class="footer">
+        <h1>About Us</h1>
+        <p>Learn more about our university and its mission...</p>
+        <div class="icons">
+            <i class="fa fa-facebook" ></i>
+            <i class="fa fa-twitter" ></i>
+            <i class="fa fa-instagram" ></i>
+            <i class="fa fa-linkedin" ></i>
+        </div>
+    </section>
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+</body>
+</html>
